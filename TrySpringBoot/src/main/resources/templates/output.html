@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>結果画面</title>
+</head>
+<body>
+<h1>DIパターン</h1>
+<p>商品No：<span th:text="${number}">100</span></p>
+<p>商品名：<span th:text="${name}">ダミー</span></p>
+<a href="index.html" th:href="@{input}">入力画面へ</a>
+</body>
+</html>

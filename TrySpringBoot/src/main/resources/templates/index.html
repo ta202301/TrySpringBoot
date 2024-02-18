@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>入力画面</title>
+</head>
+<body>
+<h1>DIパターン</h1>
+<form method="POST" action="output.html"
+ th:action="@{output}">
+<p>商品番号を入れてください(3桁の半角数字)</p>
+<input type="text" name="number"  th:field="${productForm.number}">
+<p style="color:red;" th:errors="${productForm.number}"
+ >商品番号を入れてください </p>
+<input type="submit" value="送信">
+</form>
+</body>
+</html>
+        
